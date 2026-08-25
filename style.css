@@ -9,3 +9,24 @@ h2{
 nav{
     text-align: center;
 }
+
+/* Estado base para los botones del acordeón cuando están cerrados */
+.accordion-button {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Fondo naranja, texto blanco y flecha blanca SOLO cuando la pestaña está desplegada */
+.accordion-button:not(.collapsed) {
+  background-color: #f39c12 !important;
+  color: #ffffff !important;
+  box-shadow: none; /* Elimina el borde azul por defecto al hacer clic */
+}
+
+/* Cambia la flecha desplegable a color blanco cuando el acordeón está abierto */
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+.navbar-nav .nav-link:hover {
+  color: #f39c12 !important;
+}
