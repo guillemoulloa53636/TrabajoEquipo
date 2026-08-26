@@ -10,6 +10,10 @@ nav{
     text-align: center;
 }
 
+p{
+  font-size: 15px;
+}
+
 /* Estado base para los botones del acordeón cuando están cerrados */
 .accordion-button {
   background-color: #ffffff;
@@ -29,4 +33,32 @@ nav{
 }
 .navbar-nav .nav-link:hover {
   color: #f39c12 !important;
+}
+
+.card{
+  margin: 15px;
+}
+
+p{
+color: white;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: row;
+}
+
+@media(max-width: 768px){
+  .contenedor{
+    flex-direction: column;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
+
+Img{
+  max-width: 100%;
+  height: auto;
 }
