@@ -13,19 +13,19 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;">
+<body>
 
     <!-- Navbar con diseño Rojo / Naranja / Blanco -->
     <nav class="navbar navbar-expand-lg py-2" style="background-color: #b30000; font-size: 1rem;">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fs-4 me-4 fw-bold" href="index.html">Navbar</a>
+        <a class="navbar-brand text-white fs-4 me-4 fw-bold text-decoration-none" href="index.html">Navbar</a>
         
         <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <!-- Página actual (Inicio) destacada en Naranja -->
               <a class="nav-link fw-bold fs-5 px-3" style="color: #f39c12 !important;" aria-current="page" href="index.html">Inicio</a>
@@ -45,6 +45,9 @@
             <li class="nav-item">
               <a class="nav-link text-white fs-5 px-3" href="contactanos.html">Contáctanos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-5 px-3 btn btn-outline-warning text-white ms-2" style="color: #f39c12 !important; border-color: #f39c12;" href="cotizar.html">COTIZA AQUÍ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,46 +55,72 @@
 
     <!-- Contenido Principal -->
     <main class="container my-4">
-        <h1>Buses</h1>
+        <h1 class="text-white">Buses</h1>
 
         <div class="my-3">
-            <h2>Bienvenido a tu nueva ventana para recorrer el país. En Buses por chile, creemos que el viaje en bus no es solo un medio de transporte,<br> sino el inicio de la aventura. Chile es una larga y angosta faja de tierra con paisajes contrastados,<br> y la mejor forma de apreciarlos en todo su esplendor es a través de la ventana de un autobús.</h2>
+            <h2>
+                Bienvenido a tu nueva ventana para recorrer el país. En Buses por chile, creemos que el viaje en bus no es solo un medio de transporte, sino el inicio de la aventura.<br>
+                Chile es una larga y angosta faja de tierra con paisajes contrastados, y la mejor forma de apreciarlos en todo su esplendor es a través de la ventana de un autobús.
+            </h2>
         </div>
 
-    <h2 style="color: black;">Que es lo que necesitas hacer?</h2>
-    
-    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mx-auto" style="max-width: 1100px;">
-  <div class="col">
-    <a href="tarifas.html">
-        <img src="Img/Tarifas.webp" class="card-img-top" alt="tarifas">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Ver tarifas</h5>
-      <p class="card-text">Las tarifas de los buses en Chile se adaptan a distintas necesidades de viaje, presupuestos y niveles de comodidad. En el transporte urbano de ciudades como Santiago, las tarifas están estandarizadas para facilitar la movilidad diaria en la red pública, contando además con precios rebajados para estudiantes y adultos mayores..</p>
-      <p class="card-text"><small class="text-body-secondary"></small></p>
-    </div>
-  </div>
-  <div class="col">
-    <a href="tours.html">
-        <img src="Img/Tours.jpg" class="card-img-top" alt="viajes">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">Ver tours</h5>
-      <p class="card-text">Desde los desiertos áridos del norte hasta los glaciares de la Patagonia, la oferta turística de Chile se despliega en tres experiencias inolvidables: la Zona Norte deslumbra con sus paisajes astronómicos, géiseres y valles místicos en el Desierto de Atacama; la Zona Central combina la vibrante cultura de Santiago y las icónicas colinas de Valparaíso con reconocidas rutas del vino; mientras que la Zona Sur y Austral conquista a los amantes de la aventura con sus majestuosos lagos, volcanes, la cultura de Chiloé y los deslumbrantes circuitos naturales de las Torres del Paine y la Patagonia chilena.</p>
-      <p class="card-text"><small class="text-body-secondary"></small></p>
-    </div>
-  </div>
-  <div class="col">
-    <a href="contactanos.html">
-        <img src="Img/contact.png" class="card-img-top" alt="contactos">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title">contactanos</h5>
-      <p class="card-text">Si necesitas ayuda con tu pasaje, consultar itinerarios o resolver cualquier duda sobre tu viaje, dispones de varios canales de atención al cliente. Puedes comunicarte directamente a través de nuestro Call Center de atención telefónica disponible todos los días para compras y consultas urgentes, escribirnos vía WhatsApp para una atención rápida y directa, o enviar un mensaje formal a nuestro correo electrónico de soporte para solicitudes de reembolsos y cambios de pasaje. Además, puedes acercarte de manera presencial a las oficina de ventas y boleterías ubicadas en los principales terminales de buses del país.</p>
-      <p class="card-text"><small class="text-body-secondary"></small></p>
-    </div>
-  </div>
-</div>
+        <h2 class="my-4" style="color: black;">¿Qué es lo que necesitas hacer?</h2>
+        
+        <!-- Contenedor de Tarjetas Flotantes -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mx-auto" style="max-width: 1100px;">
+            
+            <!-- Tarjeta 1: Tarifas -->
+            <div class="col">
+                <div class="card h-100 tarjeta-flotante">
+                    <a href="tarifas.html">
+                        <img src="Img/Tarifas.webp" class="card-img-top" alt="Ver tarifas">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ver tarifas</h5>
+                        <p class="card-text">
+                            Las tarifas de los buses en Chile se adaptan a distintas necesidades de viaje, presupuestos y niveles de comodidad. En el transporte urbano de ciudades como Santiago, las tarifas están estandarizadas para facilitar la movilidad diaria en la red pública, contando además con precios rebajados para estudiantes y adultos mayores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Tours -->
+            <div class="col">
+                <div class="card h-100 tarjeta-flotante">
+                    <a href="tours.html">
+                        <img src="Img/Tours.jpg" class="card-img-top" alt="Ver tours">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ver tours</h5>
+                        <p class="card-text">
+                            Desde los desiertos áridos del norte hasta los glaciares de la Patagonia, la oferta turística de Chile se despliega en tres experiencias inolvidables: la Zona Norte deslumbra con sus paisajes astronómicos, géiseres y valles místicos en el Desierto de Atacama; la Zona Central combina la vibrante cultura de Santiago y las icónicas colinas de Valparaíso con reconocidas rutas del vino; mientras que la Zona Sur y Austral conquista a los amantes de la aventura con sus majestuosos lagos, volcanes, la cultura de Chiloé y los deslumbrantes circuitos naturales de las Torres del Paine y la Patagonia chilena.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Contáctanos -->
+            <div class="col">
+                <div class="card h-100 tarjeta-flotante">
+                    <a href="contactanos.html">
+                        <img src="Img/contact.png" class="card-img-top" alt="Contáctanos">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Contáctanos</h5>
+                        <p class="card-text">
+                            Si necesitas ayuda con tu pasaje, consultar itinerarios o resolver cualquier duda sobre tu viaje, dispones de varios canales de atención al cliente. Puedes comunicarte directamente a través de nuestro Call Center de atención telefónica disponible todos los días para compras y consultas urgentes, escribirnos vía WhatsApp para una atención rápida y directa, o enviar un mensaje formal a nuestro correo electrónico de soporte para solicitudes de reembolsos y cambios de pasaje. Además, puedes acercarte de manera presencial a las oficinas de ventas y boleterías ubicadas en los principales terminales de buses del país.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">Desarrollado por María José Varga y Guillermo Ulloa - 2026</p>
+    </footer>
 
 </body>
 </html>

@@ -1,52 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Buses por Chile</title>
 
-    <!-- Bootstrap CSS (CDN Estable) -->
+  <!-- Bootstrap CSS (CDN Estable) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JavaScript -->
+  
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- Estilos Personalizados -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Navbar - Servicios -->
-<nav class="navbar navbar-expand-lg py-2" style="background-color: #b30000; font-size: 1rem;">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white fs-4 me-4 fw-bold" href="index.html">Navbar</a>
-    
-    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <!-- Activo en Naranja -->
-          <a class="nav-link fw-bold fs-5 px-3" style="color: #f39c12 !important;" aria-current="page" href="servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="tarifas.html">Tarifas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="tiposdebuses.html">Tipos de Buses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="tours.html">Tours</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="contactanos.html">Contáctanos</a>
-        </li>
-      </ul>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+  <!-- Navbar - Servicios -->
+  <nav class="navbar navbar-expand-lg py-2" style="background-color: #b30000; font-size: 1rem;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fs-4 me-4 fw-bold text-decoration-none" href="index.html">Navbar</a>
+      
+      <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5 px-3" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <!-- Activo en Naranja -->
+            <a class="nav-link fw-bold fs-5 px-3" style="color: #f39c12 !important;" aria-current="page" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5 px-3" href="tarifas.html">Tarifas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5 px-3" href="tiposdebuses.html">Tipos de Buses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5 px-3" href="tours.html">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-5 px-3" href="contactanos.html">Contáctanos</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <!-- Botón Cotiza Aquí con estilo uniforme -->
+            <a class="nav-link fw-bold fs-5 px-3 btn btn-outline-warning text-white" style="color: #f39c12 !important; border-color: #f39c12;" href="cotizar.html">COTIZA AQUÍ</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container my-5">
+    <h1 class="text-white text-center mb-4">Nuestros Servicios</h1>
+    <p class="text-center text-white mb-5 fs-5">Ofrecemos soluciones integrales de transporte terrestre a lo largo de todo Chile, adaptadas a tus necesidades corporativas, turísticas o particulares.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        
+        <!-- Acordeón de Servicios -->
+        <div class="accordion" id="accordionServicios">
+          
+          <!-- Servicio 1 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                🚌 Transportes Interurbanos y Regulares
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionServicios">
+              <div class="accordion-body text-dark">
+                <p class="mb-0">Contamos con frecuencias diarias conectando las principales ciudades del norte, centro y sur de Chile. Nuestras flotas garantizan puntualidad, comodidad, conexión Wi-Fi a bordo, aire acondicionado y sistemas de entretenimiento para viajes de larga distancia.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                🏔️ Viajes Especiales y Turismo Privado
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionServicios">
+              <div class="accordion-body text-dark">
+                <p class="mb-0">Ofrecemos arriendo de buses exclusivos para delegaciones, colegios, universidades y agencias de turismo. Diseñamos itinerarios personalizados para recorrer destinos icónicos como Torres del Paine, San Pedro de Atacama o la Ruta de los Lagos con conductores profesionales de vasta experiencia.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                🏢 Traslado Corporativo y de Personal
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionServicios">
+              <div class="accordion-body text-dark">
+                <p class="mb-0">Soluciones logísticas para empresas e industrias (minería, agroindustria y servicios). Garantizamos el traslado seguro de trabajadores con monitoreo GPS en tiempo real, estrictos protocolos de mantenimiento y cumplimiento total de las normativas vigentes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 4 -->
+          <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                📦 Encomiendas y Cargo Exprés
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionServicios">
+              <div class="accordion-body text-dark">
+                <p class="mb-0">Aprovechamos la amplia red de rutas de nuestros autobuses para realizar envíos rápidos y seguros de paquetería y documentos entre agencias a lo largo del país, garantizando entregas prioritarias en 24 a 48 horas.</p>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- Fin del acordeón -->
+
+        <!-- Botón de llamado a la acción -->
+        <div class="text-center mt-5">
+          <a href="cotizar.html" class="btn btn-lg fw-bold text-white px-5 py-3 shadow" style="background-color: #f39c12;">
+            ¿NECESITAS UN SERVICIO PERSONALIZADO? COTIZA AQUÍ
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">Desarrollado por María José Varga y Guillermo Ulloa - 2026</p>
+  </footer>
+
 </body>
 </html>
