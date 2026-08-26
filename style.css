@@ -110,3 +110,8 @@ img {
     font-size: 14px;
   }
 }
+
+.accordion-body a {
+  display: block; /* Obliga a cada enlace a ocupar todo el ancho disponible */
+  margin-bottom: 10px; /* Genera un espacio entre ambos enlaces */
+}
