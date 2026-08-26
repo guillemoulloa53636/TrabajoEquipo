@@ -4,27 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contáctanos - Buses por Chile</title>
-  <link rel="stylesheet" href="style.css">
 
   <!-- Bootstrap CSS (CDN Estable) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Estilos Personalizados -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Nuevo Menú de Navegación Rojo/Naranja/Blanco -->
+  <!-- Menú de Navegación Rojo/Naranja/Blanco -->
   <nav class="navbar navbar-expand-lg py-2" style="background-color: #b30000;">
     <div class="container-fluid">
-      <a class="navbar-brand text-white fs-4 me-4 fw-bold" href="index.html">Navbar</a>
+      <a class="navbar-brand text-white fs-4 me-4 fw-bold text-decoration-none" href="index.html">Navbar</a>
       
       <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
       </button>
       
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-white fs-5 px-3" href="index.html">Inicio</a>
           </li>
@@ -42,7 +44,7 @@
           </li>
           <li class="nav-item">
             <!-- Página actual destacada en Naranja -->
-            <a class="nav-link fw-bold fs-5 px-3" style="color: #f39c12 !important;" href="contactanos.html">Contáctanos</a>
+            <a class="nav-link fw-bold fs-5 px-3" style="color: #f39c12 !important;" aria-current="page" href="contactanos.html">Contáctanos</a>
           </li>
         </ul>
       </div>
@@ -51,20 +53,23 @@
 
   <!-- Contenido Principal -->
   <main class="container my-4">
-    <h1 class="mb-4">Información Institucional</h1>
-    <img src="Img/logo-BUS-SUR.jpg" alt="Logo buses sur">
+    <h1 class="mb-4 text-white">Información Institucional</h1>
+    
+    <div class="mb-4">
+      <img src="Img/logo-BUS-SUR.jpg" alt="Logo buses sur" class="img-fluid rounded shadow" style="max-width: 250px;">
+    </div>
 
-    <div class="accordion my-4" id="acordeonBusSur">
+    <div class="accordion my-4 shadow-sm" id="acordeonBusSur">
 
       <!-- 1. Nuestra misión -->
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mision">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mision">
             Nuestra misión
           </button>
         </h2>
-        <div id="mision" class="accordion-collapse collapse show" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
+        <div id="mision" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
+          <div class="accordion-body text-dark">
             Creemos que transportar personas involucra más que un simple viaje. Nos preocupamos de entregar la calidez y cercanía que nos caracteriza como magallánicos. Conocemos y recorremos las principales rutas de la Patagonia chileno-argentina y nos aseguramos de generar la confianza, calidad y seguridad que nuestros pasajeros merecen.
           </div>
         </div>
@@ -78,7 +83,7 @@
           </button>
         </h2>
         <div id="vision" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
+          <div class="accordion-body text-dark">
             Ser líderes en frecuencias en la región de Magallanes, facilitando las necesidades de transporte de los habitantes de la región como del turismo de la zona, manteniendo un fuerte compromiso por entregar un servicio innovador y enfocado en fidelizar continuamente a nuestros clientes. Aspiramos a mantener un enfoque de gestión centrado en las nuevas tecnologías y una renovación permanente de la flota, favoreciendo un modelo de negocios sustentable y responsable en el tiempo.
           </div>
         </div>
@@ -92,7 +97,7 @@
           </button>
         </h2>
         <div id="valores" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
+          <div class="accordion-body text-dark">
             <ul>
               <li><strong>Amor por nuestra identidad:</strong> Somos una empresa natalina, que entrega un servicio caracterizado por la calidez de una empresa familiar. Nos sentimos orgullosos de pertenecer a esta región y nos preocupamos permanentemente por el bienestar y la satisfacción de nuestros clientes.</li>
               <li><strong>Responsabilidad:</strong> Cumplimos con nuestros compromisos acordados en cuanto a fechas, horas, rutas, valores y todas las características de los servicios de transporte de pasajeros y encomiendas.</li>
@@ -114,7 +119,7 @@
           </button>
         </h2>
         <div id="quienesSomos" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
+          <div class="accordion-body text-dark">
             <p>BUS-SUR® es una empresa familiar fundada por don Aquilino Silva Obando (1932–2005), un hombre forjador que se radicó en la Región de Magallanes tras emigrar desde la localidad de Loncoche, en la Región de La Araucanía (IX Región de Chile). Desde sus inicios, la empresa ha estado profundamente ligada al desarrollo del transporte en la Patagonia, consolidándose a lo largo de décadas como un actor relevante en la conectividad del extremo sur del país.</p>
             <p>Desde 1956 y con más de 70 años de experiencia, BUS-SUR® ofrece principalmente servicios de transporte de pasajeros en las rutas de la Patagonia chileno-argentina, conectando en el territorio nacional ciudades como Punta Arenas, Puerto Natales y Torres del Paine, y a nivel internacional destinos como El Calafate, Río Grande, Ushuaia y Río Gallegos. Además, la empresa presta servicios de carga, encomiendas y correspondencia, así como viajes especiales y traslados turísticos para grupos, instituciones y empresas.</p>
             <p>Gracias a alianzas estratégicas con otras compañías, BUS-SUR® amplía su oferta en temporada alta, garantizando recorridos permanentes y servicios complementarios que responden a las diversas necesidades del turismo local y regional, permitiendo a los viajeros vivir la experiencia de conocer la Patagonia.</p>
@@ -130,18 +135,17 @@
           </button>
         </h2>
         <div id="historia" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
-            <p>BUS-SUR® es una empresa familiar, fundada por Don AQUILINO SILVA OBANDO (1932 – 2005), un hombre que llegó a Magallanes proveniente de Loncoche (IX región de Chile) a cumplir con el servicio militar obligatorio. Encantado por estas tierras, por su gente y sus amigos, decidió radicarse en la zona, trabajando con gran persistencia para reunir el capital que le permitió iniciarse en el rubro del transporte; primero adquiriendo camiones y luego buses. Don Aquilino fue un hombre de campo, hasta entonces una fuerte actividad económica del sur de Chile. Debido a su esfuerzo, logró adquirir más de mil cabezas de vacuno, así como también trabajó en sus campos -como desde niño sus padres le enseñaron-.</p>
+          <div class="accordion-body text-dark">
+            <p>BUS-SUR® es una empresa familiar, fundada por Don AQUILINO SILVA OBANDO (1932 – 2005), un hombre que llegó a Magallanes proveniente de Loncoche (IX región de Chile) a cumplir con el servicio militar obligatorio. Encantado por estas tierras, por su gente y sus amigos, decidió radicarse en la zona, trabajando con gran persistencia para reunir el capital que le permitió iniciarse en el rubro del transporte; primero adquiriendo camiones y luego buses.</p>
             <div class="text-center my-3">
-              <img src="img/img1-1.webp" class="img-fluid rounded" alt="Fundador Aquilino Silva">
+              <img src="img/img1-1.webp" class="img-fluid rounded shadow-sm" alt="Fundador Aquilino Silva" style="max-height: 250px;">
             </div>
-            <p>Emprendedor, con una gran convicción logró forjar un destacado desarrollo gracias a su gran sabiduría, en dos rubros muy importantes: el transporte y la ganadería. En sus inicios, comenzó sus actividades trasladando personal de la ganadería y minería de aquellos años, realizando viajes entre Puerto Natales y Río Turbio (República Argentina). Gracias a las frecuencias realizadas, la empresa fue capaz de ampliar su capacidad de transporte para abrir nuevas rutas por la Patagonia chileno-argentina.</p>
-            <p>Desde muy temprana edad, su hijo Carlos -actualmente reconocido transportista de la región- trabajó junto a su padre en esta importante empresa de transporte. Gracias al esfuerzo conjunto, constancia y el buen trato con la gente magallánica, han podido mantener a través del tiempo, el servicio de transporte que moviliza a millones de personas que prefieren el servicio de la compañía.</p>
+            <p>Emprendedor, con una gran convicción logró forjar un destacado desarrollo gracias a su gran sabiduría, en dos rubros muy importantes: el transporte y la ganadería. En sus inicios, comenzó sus actividades trasladando personal de la ganadería y minería de aquellos años, realizando viajes entre Puerto Natales y Río Turbio (República Argentina).</p>
+            <p>Desde muy temprana edad, su hijo Carlos -actualmente reconocido transportista de la región- worked junto a su padre en esta importante empresa de transporte.</p>
             <div class="text-center my-3">
-              <img src="Img/bus-3.jpg" class="img-fluid rounded" alt="Historia de Bus Sur">
+              <img src="Img/bus-3.jpg" class="img-fluid rounded shadow-sm" alt="Historia de Bus Sur" style="max-height: 250px;">
             </div>
-            <p>Actualmente, la empresa se encuentra administrada por la nueva generación de la familia: Mariano Silva -estudiante de Ingeniería- y Carla Silva –Abogada- (ambos hijos de Carlos) quienes emprenden junto a su padre una nueva etapa de la compañía, apoyados por alrededor de 100 colaboradores quienes participan día a día en la maravillosa tarea de conectar la Patagonia chileno-argentina.</p>
-            <p>De esta manera, la nueva generación de la empresa, anhela cumplir un siglo transportando a personas en las tierras patagónicas del fin del mundo, asegurando el sello de calidad en cada uno de sus servicios.</p>
+            <p>Actualmente, la empresa se encuentra administrada por la nueva generación de la familia: Mariano Silva y Carla Silva, apoyados por alrededor de 100 colaboradores quienes participan día a día en la maravillosa tarea de conectar la Patagonia chileno-argentina.</p>
           </div>
         </div>
       </div>
@@ -154,25 +158,28 @@
           </button>
         </h2>
         <div id="equipo" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
+          <div class="accordion-body text-dark">
             <p>Somos alrededor de 100 personas, quienes a diario hacemos rodar la empresa. Nos encontramos divididos en diferentes áreas para engranar cada una de las tareas asociadas al servicio de transporte de pasajeros y encomiendas.</p>
-            <p>Nuestro personal se encuentra especializado y posee experiencia en el rubro del transporte: auxiliares, conductores profesionales, asistentes de ventas, mecánicos, además del personal administrativo y diversos profesionales multidisciplinarios, tales como diseñadores gráficos, psicólogos, ingenieros comerciales, informáticos, entre otros que conforman esta gran compañía.</p>
-            <p>Formamos un equipo humano actualizado y competente a las nuevas tendencias del mercado, que imprime un gran compromiso a diario, entregando lo mejor de sí para otorgar un servicio agradable y seguro a nuestros pasajeros.</p>
+            <p>Nuestro personal se encuentra especializado y posee experiencia en el rubro del transporte: auxiliares, conductores profesionales, asistentes de ventas, mecánicos, además del personal administrativo y diversos profesionales multidisciplinarios.</p>
           </div>
         </div>
       </div>
 
-      <!-- 7. Contáctanos -->
+      <!-- 7. Contáctanos (Abierto por defecto o corregido de color) -->
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contacto">
+          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contacto">
             Contáctanos
           </button>
         </h2>
-        <div id="contacto" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
-          <div class="accordion-body">
-            <p><strong>Teléfono / WhatsApp:</strong> +56 9 96323559</p>
-            <p><strong>Correo Electrónico:</strong> sac@bussur.com</p>
+        <div id="contacto" class="accordion-collapse collapse show" data-bs-parent="#acordeonBusSur">
+          <div class="accordion-body text-dark fw-bold fs-5">
+            <p class="mb-2" style="color: #212529 !important;">
+              📞 <strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/56996323559" target="_blank" class="text-decoration-none text-primary">+56 9 96323559</a>
+            </p>
+            <p class="mb-0" style="color: #212529 !important;">
+              ✉️ <strong>Correo Electrónico:</strong> <a href="mailto:sac@bussur.com" class="text-decoration-none text-primary">sac@bussur.com</a>
+            </p>
           </div>
         </div>
       </div>
@@ -182,10 +189,8 @@
 
   <!-- Pie de página -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p class="mb-0">Desarrollado por María José Vargas - 2026</p>
+    <p class="mb-0">Desarrollado por María José Varga y Guillermo Ulloa - 2026</p>
   </footer>
 
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

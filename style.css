@@ -1,20 +1,32 @@
 body{
     background-color: brown;
-    margin: 0;
-    padding: 0;
 }
 
-h2{
-    color: white;
-    text-align: center;
-}
-nav{
-    text-align: center;
+h2 {
+  color: white;
+  text-align: center;
 }
 
-p{
+nav {
+  text-align: center;
+}
+
+/* Regla general de párrafos (para textos directos en el fondo oscuro) */
+p {
   font-size: 15px;
+  color: white;
 }
+
+/* Selector en minúscula según los estándares */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ==========================================
+   2. ACORDEÓN 
+   ========================================== */
 
 /* Estado base para los botones del acordeón cuando están cerrados */
 .accordion-button {
@@ -26,41 +38,75 @@ p{
 .accordion-button:not(.collapsed) {
   background-color: #f39c12 !important;
   color: #ffffff !important;
-  box-shadow: none; /* Elimina el borde azul por defecto al hacer clic */
+  box-shadow: none; 
 }
 
 /* Cambia la flecha desplegable a color blanco cuando el acordeón está abierto */
 .accordion-button:not(.collapsed)::after {
   filter: brightness(0) invert(1);
 }
+
+/* FORZAR TEXTO OSCURO DENTRO DEL ACORDEÓN (Resuelve el problema de invisibilidad) */
+.accordion-body,
+.accordion-body p,
+.accordion-body ul,
+.accordion-body li {
+  color: #212529 !important;
+  background-color: #ffffff;
+}
+
+
+/* ==========================================
+   3. NAVEGACIÓN Y TARJETAS
+   ========================================== */
 .navbar-nav .nav-link:hover {
   color: #f39c12 !important;
 }
 
-.card{
+.card {
   margin: 15px;
 }
 
-p{
-color: white;
-}
-
-.contenedor{
+.contenedor {
   display: flex;
   flex-direction: row;
 }
 
-@media(max-width: 768px){
-  .contenedor{
+/* Tarjeta personalizada flotante */
+.tarjeta-flotante {
+  background-color: #ffffff !important; 
+  border: none !important; 
+  border-radius: 12px !important; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  overflow: hidden; 
+}
+
+.tarjeta-flotante:hover {
+  transform: translateY(-8px); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35); 
+}
+
+.tarjeta-flotante .card-title {
+  color: #212529 !important;
+  font-weight: bold;
+}
+
+.tarjeta-flotante .card-text {
+  color: #495057 !important;
+  font-size: 0.9rem;
+}
+
+
+/* ==========================================
+   4. DISEÑO ADAPTABLE (RESPONSIVE)
+   ========================================== */
+@media (max-width: 768px) {
+  .contenedor {
     flex-direction: column;
   }
 
-  p{
+  p {
     font-size: 14px;
   }
-}
-
-Img{
-  max-width: 100%;
-  height: auto;
 }
