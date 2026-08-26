@@ -16,122 +16,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar - Tarifas -->
-<nav class="navbar navbar-expand-lg py-2" style="background-color: #b30000; font-size: 1rem;">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white fs-4 me-4 fw-bold" href="index.html">Navbar</a>
+   <!-- Contenido Principal -->
+  <main class="container my-4">
+    <h1 class="mb-4 text-white">Tarifas</h1>
     
-    <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <!-- Activo en Naranja -->
-          <a class="nav-link fw-bold fs-5 px-3" style="color: #f39c12 !important;" aria-current="page" href="tarifas.html">Tarifas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="tiposdebuses.html">Tipos de Buses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="tours.html">Tours</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white fs-5 px-3" href="contactanos.html">Contáctanos</a>
-        </li>
-      </ul>
+    <div class="mb-4">
+      <img src="Img/logo-BUS-SUR.jpg" alt="Logo buses sur" class="img-fluid rounded shadow" style="max-width: 250px;">
     </div>
-  </div>
-</nav>
 
-<h1>Tarifas</h1>
+    <div class="accordion my-4 shadow-sm" id="acordeonBusSur">
 
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingNorte">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNorte" aria-expanded="false" aria-controls="collapseNorte">
-        Tarifas Zona Norte (Arica, Iquique, Antofagasta)
-      </button>
-    </h2>
-    <div id="collapseNorte" class="accordion-collapse collapse" aria-labelledby="headingNorte" data-bs-parent="#accordionTarifas">
-      <div class="accordion-body">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Santiago - Antofagasta
-            <a href="https://www.flixbus.cl/rutas-bus/santiago-antofagasta?departureCity=1d77e63f-130b-4415-a3c5-5bcbcd9111cf&arrivalCity=8bfd91b6-ecd5-4368-9ec4-ae3aff6abbba&utm_source=google&utm_medium=sea-nonbrand&utm_campaign=8817390182.23972207701_196463393254.813865592524_dsa-2221132616614_9198133_1003298_&utm_term=&utm_content=cl.flixbus&gad_source=1&gad_campaignid=23972207701&gbraid=0AAAAADs4aNz-JJZ2ksul2erPi0yU0ogow&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpcz10CTCz6PgqdxolM_6LMILYPOVE0jjFHfhAmAS0KctbY47HPSan0aAl5tEALw_wcB">
-              <span class="badge bg-primary rounded-pill">$35.000 CLP</span>
-            </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Santiago - Iquique
-           <a href="https://www.flixbus.cl/rutas-bus/santiago-iquique?utm_source=google&utm_medium=sea-nonbrand&utm_campaign=8817390182.23972207701_196463393254.813865592524_dsa-2221132616614_9198133_1003327_&utm_term=&utm_content=cl.flixbus&gad_source=1&gad_campaignid=23972207701&gbraid=0AAAAADs4aNz-JJZ2ksul2erPi0yU0ogow&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpc1CTwTYwc1pmylhUrsJYrFx8EfrA9Gd4XGhuLTH9FWS4diNDS7ATgaAui1EALw_wcB">
-             <span class="badge bg-primary rounded-pill">$42.000 CLP</span>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#mision">
+            Centro de chile
+          </button>
+        </h2>
+        <div id="mision" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
+          <div class="accordion-body text-dark">
+              <a href="https://www.flixbus.cl/rutas-bus/santiago-valparaiso?departureCity=1d77e63f-130b-4415-a3c5-5bcbcd9111cf&arrivalCity=a3de24ee-4f09-40cb-b9f1-8cfc9764fa45&utm_source=google&utm_medium=sea-nonbrand&utm_campaign=2339589503.21425870602_165420075753.794534188930_kwd-370486357187_9198133__&utm_term=bus%20valparaiso&utm_content=cl.flixbus&gad_source=1&gad_campaignid=21425870602&gbraid=0AAAAADs4aNxtDFvOnM6yxV8VszWV-rLHN&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpc2WyHc30VxfYb16h7r8ARnkxqL1n-DCQEIcBWotd534ij7FvFqoVkaAqTIEALw_wcB">
+                <span>santiago-valparaiso $15.000</span>
+              </a>
+              <a href="https://www.flixbus.cl/rutas-bus/santiago-concepcion?departureCity=1d77e63f-130b-4415-a3c5-5bcbcd9111cf&arrivalCity=0da951ef-a2d6-4ebd-bcc5-91a03d6c5734&utm_source=google&utm_medium=sea-nonbrand&utm_campaign=2339589503.21425870602_193568660350.810234794379_kwd-1842644925546_9198133__&utm_term=bus%20concepci%C3%B3n&utm_content=cl.flixbus&gad_source=1&gad_campaignid=21425870602&gbraid=0AAAAADs4aNxtDFvOnM6yxV8VszWV-rLHN&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpcX1Q4-zDFcs3ICCHfvVFHCvu2KGOrtq_6mmKmnAuJ5ldldxbh4d58aAkQ6EALw_wcB">
+                <span>Santiago-concepcion $30.000</span>
+              </a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#vision">
+            Sur de chile
+          </button>
+        </h2>
+        <div id="vision" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
+          <div class="accordion-body text-dark">
+           <a href="https://kupos.cl/es/buses/a-chiloe">
+            <Span> Santiago-chiloe $35.000</Span>
            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Zona Centro -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingCentro">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCentro" aria-expanded="false" aria-controls="collapseCentro">
-        Tarifas Zona Centro (Valparaíso, Viña del Mar, Concepción)
-      </button>
-    </h2>
-    <div id="collapseCentro" class="accordion-collapse collapse" aria-labelledby="headingCentro" data-bs-parent="#accordionTarifas">
-      <div class="accordion-body">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Santiago - Valparaíso
-            <a href="https://www.flixbus.cl/rutas-bus/santiago-valparaiso?departureCity=1d77e63f-130b-4415-a3c5-5bcbcd9111cf&arrivalCity=a3de24ee-4f09-40cb-b9f1-8cfc9764fa45&utm_source=google&utm_medium=sea-nonbrand&utm_campaign=8817390182.23972207701_196463393254.813865592524_dsa-2221132616614_9198133_1003332_&utm_term=&utm_content=cl.flixbus&gad_source=1&gad_campaignid=23972207701&gbraid=0AAAAADs4aNz-JJZ2ksul2erPi0yU0ogow&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPperIcQgcQ2lp7wKDzV0ZW2Jb8HPD-eChbF6x0ycwkg7d8sxRf4OYiAaAqneEALw_wcB">
-              <span class="badge bg-primary rounded-pill">$5.000 CLP</span>
-            </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Santiago - Concepción
-            <a href="https://www.flixbus.cl/rutas-bus/santiago-concepcion?utm_source=google&utm_medium=sea-nonbrand&utm_campaign=8817390182.23972207701_196463393254.813865592524_dsa-2221132616614_9198133_1003302_&utm_term=&utm_content=cl.flixbus&gad_source=1&gad_campaignid=23972207701&gbraid=0AAAAADs4aNz-JJZ2ksul2erPi0yU0ogow&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpd6CCJr1hKneEjJhSx4EPkHqNMhOfuC7sK2k6B9HaApt8PuS4GFB3kaAnEWEALw_wcB">
-              <span class="badge bg-primary rounded-pill">$18.000 CLP</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Zona Sur -->
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingSur">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSur" aria-expanded="true" aria-controls="collapseSur">
-        Tarifas Zona Sur (Temuco, Valdivia, Puerto Montt)
-      </button>
-    </h2>
-    <div id="collapseSur" class="accordion-collapse collapse show" aria-labelledby="headingSur" data-bs-parent="#accordionTarifas">
-      <div class="accordion-body">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Santiago - Chiloe
-            <a href="https://chiloebus.azurewebsites.net/">
-              <span class="badge bg-primary rounded-pill">$20.000 CLP</span>
-            </a>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Santiago - Puerto Montt
-           <a href="https://www.recorrido.cl/es/bus/pasajes-puerto-montt?utm_source=google&utm_medium=cpc&utm_campaign=destination-bus-puerto_montt-es-chile&gad_source=1&gad_campaignid=21235824386&gbraid=0AAAAADivratx_UPgKK2Zgj1-GPwgIGNxc&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpft70TVIq4-WUMSHOB8zHGXJovGAbsGjjkf8v-zEV7jTY2K3TI-IekaAnhnEALw_wcB">
-             <span class="badge bg-primary rounded-pill">$25.000 CLP</span>
+           <a href="">
+            <span>Santiago-Valdivia $40.000</span>
            </a>
-          </li>
-        </ul>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#valores">
+            Norte de chile
+          </button>
+        </h2>
+        <div id="valores" class="accordion-collapse collapse" data-bs-parent="#acordeonBusSur">
+          <div class="accordion-body text-dark">
+            <a href="https://www.recorrido.cl/es/bus/pasajes-arica?utm_source=google&utm_medium=cpc&utm_campaign=destination-bus-arica-es-chile&gad_source=1&gad_campaignid=21239526454&gbraid=0AAAAADivravFNyId1C1QF3X9mWotzSjxO&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpdvYi-GeSkjx0X1kxtR_aDrG4QreXMkkGnBBX-HYHH7TWu2fV3WREkaAmfQEALw_wcB">
+              <span>Santiago arica- $45.000</span>
+            </a>
+            <a href="">
+              <span> santiago- Antofagasta $50.000</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
+  </main>
 </body>
 </html>
